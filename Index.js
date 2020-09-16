@@ -13,7 +13,7 @@ client.on('message', async (message) => {
     if(message.content === '-suggest') {
  const exampleEmbed = new Discord.MessageEmbed()
 	.setTitle('***Suggestion Created***')
-		.setDescription('Some description here')
+		.setDescription('Authors suggestion here.')
           .setAuthor('${message.author.username}',${message.author.avatar}')
 const channel = client.channels.cache.get('id');
 channel.send(Embed);
