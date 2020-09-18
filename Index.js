@@ -14,7 +14,7 @@ client.on('message', async (message) => {
  const exampleEmbed = new Discord.MessageEmbed()
     .setTitle('***Suggestion Created***')
         .setDescription('Some description here')
-          .setAuthor('${message.author.username}',${message.author.avatar}')
+          .setAuthor('${message.author.username}','${message.author.avatar}')
 const channel = message.guild.channels.cache.get('id');
 channel.send(exampleEmbed);
 await message.react("✅")
